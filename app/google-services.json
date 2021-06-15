@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "13026235560",
+    "project_id": "campuskeepup",
+    "storage_bucket": "campuskeepup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13026235560:android:1fddf989a58b6939709e9d",
+        "android_client_info": {
+          "package_name": "com.example.campuskeepup_androideco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13026235560-bn4kdiimdpslgklig1o4307s7end24ru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn62P04PGpykaPYvtKjuT5_5TLdrZwa3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13026235560-bn4kdiimdpslgklig1o4307s7end24ru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

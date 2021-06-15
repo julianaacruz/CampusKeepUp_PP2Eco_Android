@@ -86,32 +86,34 @@
         android:id="@+id/registerBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="8dp"
         android:width="330dp"
         android:height="60dp"
         android:backgroundTint="#8EA6FD"
-        android:elevation="0"
         android:text="Registrarme"
         app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/registerGoogleBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="494dp" />
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasReg" />
 
     <Button
         android:id="@+id/registerGoogleBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:width="330dp"
         android:height="60dp"
         android:backgroundTint="#FFFFFF"
-        android:elevation="0"
         android:text="Registrarme con google"
         android:textColor="#8EA6FD"
         app:cornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerBtn"
         app:strokeColor="#8EA6FD"
-        app:strokeWidth="2dp"
-        tools:layout_editor_absoluteY="571dp" />
+        app:strokeWidth="2dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -129,7 +131,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
         android:text="Ya tengo una cuenta. Iniciar Sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerGoogleBtn" />
