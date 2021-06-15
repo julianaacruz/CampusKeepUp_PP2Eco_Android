@@ -1,21 +1,20 @@
 package com.example.campuskeepup_androideco;
 
-import com.google.firebase.auth.FirebaseUser;
-
 public class Student {
-    private FirebaseUser id;
+    private String id;
     private String name;
     private String email;
     private String password;
 
-    public Student(String id, String name, String email, String password) {
+
+    public Student() {
     }
 
-    public FirebaseUser getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(FirebaseUser id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -43,11 +42,11 @@ public class Student {
         this.password = password;
     }
 
-    public Student(FirebaseUser id) {
+    public Student(String id) {
         this.id = id;
     }
 
-    public Student(FirebaseUser id, String name, String email, String password) {
+    public Student(String id, String name, String email, String password) {
         this.id = id;
         this.name = name;
         this.email = email;

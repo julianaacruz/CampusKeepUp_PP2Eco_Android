@@ -7,17 +7,31 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/registerClassBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:width="330dp"
+        android:height="120dp"
+        android:backgroundTint="#238EA6FD"
+        android:text="Registrar Clase"
+        android:textColor="#8EA6FD"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="100dp"
         android:text="Tus cursos"
         android:textColor="#2A3459"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/registerClassBtn"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -33,9 +47,8 @@
         android:id="@+id/imageView2"
         android:layout_width="108dp"
         android:layout_height="24dp"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/loguito" />
 </androidx.constraintlayout.widget.ConstraintLayout>

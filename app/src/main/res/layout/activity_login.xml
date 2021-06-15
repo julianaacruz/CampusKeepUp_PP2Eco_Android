@@ -8,14 +8,14 @@
     tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/nameET"
+        android:id="@+id/emailET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:width="330dp"
         android:ems="10"
         android:fontFamily="sans-serif"
-        android:hint="Nombre"
+        android:hint="Correo electrónico"
         android:includeFontPadding="false"
         android:inputType="textPersonName"
         android:textSize="16sp"
@@ -24,18 +24,18 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/emailET"
+        android:id="@+id/passwordlET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:width="330dp"
         android:ems="10"
-        android:hint="Correo electrónico"
+        android:hint="Contraseña"
         android:inputType="textPersonName"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/nameET"
-        app:layout_constraintStart_toStartOf="@+id/nameET"
-        app:layout_constraintTop_toBottomOf="@+id/nameET" />
+        app:layout_constraintEnd_toEndOf="@+id/emailET"
+        app:layout_constraintStart_toStartOf="@+id/emailET"
+        app:layout_constraintTop_toBottomOf="@+id/emailET" />
 
     <Button
         android:id="@+id/loginBtn"
@@ -48,9 +48,9 @@
         android:text="Iniciar sesión"
         app:cornerRadius="12dp"
         app:layout_constraintBottom_toTopOf="@+id/loginGoogleBtn"
-        app:layout_constraintEnd_toEndOf="@+id/emailET"
+        app:layout_constraintEnd_toEndOf="@+id/passwordlET"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/emailET" />
+        app:layout_constraintStart_toStartOf="@+id/passwordlET" />
 
     <Button
         android:id="@+id/loginGoogleBtn"
@@ -64,9 +64,9 @@
         android:textColor="#8EA6FD"
         app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/emailET"
+        app:layout_constraintEnd_toEndOf="@+id/passwordlET"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/emailET"
+        app:layout_constraintStart_toStartOf="@+id/passwordlET"
         app:strokeColor="#8EA6FD"
         app:strokeWidth="2dp" />
 
