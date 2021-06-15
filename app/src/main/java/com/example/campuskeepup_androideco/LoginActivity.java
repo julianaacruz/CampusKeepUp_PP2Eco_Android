@@ -10,13 +10,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText emailET, passwordET;
     private TextView loginRegister;
-    private Button loginBtn,loginBackBtn;
+    private FloatingActionButton loginBackBtn;
+    private Button loginBtn;
     private FirebaseAuth auth;
 
     @Override

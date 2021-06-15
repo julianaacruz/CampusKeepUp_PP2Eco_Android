@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -17,7 +18,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     private EditText nameReg, emailReg, passwordReg, confirmPasReg;
     private TextView registerLogin;
-    private Button registerBtn, registerGoogleBtn, registerBackBtn;
+    private Button registerBtn, registerGoogleBtn;
+    private FloatingActionButton registerBackBtn;
     private FirebaseAuth auth;
     private FirebaseDatabase db;
 
