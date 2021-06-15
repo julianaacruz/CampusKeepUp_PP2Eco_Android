@@ -17,7 +17,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     private EditText nameReg, emailReg, passwordReg, confirmPasReg;
     private TextView registerLogin;
-    private Button registerBtn, registerGoogleBtn;
+    private Button registerBtn, registerGoogleBtn, registerBackBtn;
     private FirebaseAuth auth;
     private FirebaseDatabase db;
 
@@ -33,17 +33,38 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         registerLogin = findViewById(R.id.registerLogin);
         registerBtn = findViewById(R.id.registerBtn);
         registerGoogleBtn = findViewById(R.id.registerGoogleBtn);
+        registerBackBtn = findViewById(R.id.registerBackBtn);
 
         auth = FirebaseAuth.getInstance();
         db = FirebaseDatabase.getInstance();
 
         registerBtn.setOnClickListener(this);
+        registerLogin.setOnClickListener(this);
+        registerBackBtn.setOnClickListener(this);
+
 
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+
+            case R.id.registerBackBtn: //Volver a anterior pantalla
+
+                Intent i = new Intent(this, StartActivity.class);
+                startActivity(i);
+                finish();
+
+                break;
+
+            case R.id.registerLogin: //No tengo cuenta
+
+                Intent n = new Intent(this, LoginActivity.class);
+                startActivity(n);
+                finish();
+
+                break;
+
             case R.id.registerBtn:
                 auth.createUserWithEmailAndPassword(emailReg.getText().toString(), passwordReg.getText().toString())
                 .addOnCompleteListener(

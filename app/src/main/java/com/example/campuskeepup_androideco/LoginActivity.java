@@ -15,8 +15,8 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText emailET, passwordET;
-    private TextView loginResgiter;
-    private Button loginBtn;
+    private TextView loginRegister;
+    private Button loginBtn,loginBackBtn;
     private FirebaseAuth auth;
 
     @Override
@@ -26,12 +26,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         emailET = findViewById(R.id.emailET);
         passwordET = findViewById(R.id.passwordlET);
-        loginResgiter = findViewById(R.id.loginRegister);
+        loginRegister = findViewById(R.id.loginRegister);
         loginBtn = findViewById(R.id.loginBtn);
+        loginBackBtn  = findViewById(R.id.loginBackBtn);
 
         auth = FirebaseAuth.getInstance();
 
         loginBtn.setOnClickListener(this);
+        loginRegister.setOnClickListener(this);
+        loginBackBtn.setOnClickListener(this);
 
 
     }
@@ -39,7 +42,21 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+
+
+            case R.id.loginBackBtn: //Volver a anterior pantalla
+
+                Intent i = new Intent(this, StartActivity.class);
+                startActivity(i);
+                finish();
+
+                break;
+
             case R.id.loginRegister: //No tengo cuenta
+
+                Intent n = new Intent(this, SignUpActivity.class);
+                startActivity(n);
+                finish();
 
                 break;
 
